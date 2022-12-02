@@ -1,0 +1,293 @@
+body {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  font-family: "Epilogue";
+  font-size: 1.1rem;
+  max-width: 85%;
+  margin: 2rem auto;
+}
+
+h1 {
+  font-family: "Epilogue";
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1;
+  padding: 4rem 0 2rem;
+}
+
+span {
+  display: block;
+}
+
+/* Navigation */
+nav {
+  position: relative;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.nav-item {
+  float: left;
+  margin-right: 2rem;
+  display: inline-block;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+a {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.arrow-icon-down {
+  transition: .2s;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  background-color: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 0 1rem #00000033;
+  display: none;
+  line-height: 2;
+  margin-top: 2rem;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  width: 11rem;
+}
+
+.dropdown-content.left {
+  width: 8rem;
+}
+
+.dropdown-content img {
+  margin-right: 1rem;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border-radius: .75rem;
+  border: .14rem solid hsl(0, 0%, 41%);
+  padding: .75rem 1.5rem;
+  position: relative;
+  top: -.75rem;
+}
+
+.btn:hover {
+  border: .14rem solid hsl(0, 0%, 8%);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Content */
+p {
+  color: hsl(0, 0%, 41%);
+}
+
+.content {
+  padding-right: 3rem;
+  width: 50%;
+}
+
+.heading {
+  margin: 3rem auto;
+  width: 85%;
+}
+
+.hero-desktop-img {
+  float: right;
+  padding-left: 3rem;
+  width: 50%;
+}
+
+.content .btn {
+  background-color: hsl(0, 0%, 8%);
+  border-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  display: inline-block;
+  font-weight: 700;
+  position: static;
+  margin-top: 5rem;
+}
+
+.content .btn:hover {
+  background: hsl(0, 0%, 98%);
+  border-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+}
+
+.menu-icon {
+  display: none;
+}
+
+.hero-mobile-img {
+  display: none;
+}
+
+.clients {
+  position: absolute;
+  bottom: -4rem;
+}
+
+.attribution {
+  font-size: .85rem;
+  padding-top: 5rem;
+  clear: right;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  body, .heading, .content {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  span {
+    display: inline;
+  }
+
+  nav {
+    padding: 3rem;
+    width: 100%;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .content {
+    padding: .5rem;
+  }
+
+  .content .btn {
+    margin-top: 2rem;
+  }
+
+  .hero-desktop-img {
+    display: none;
+  }
+
+  .hero-mobile-img {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-menu-button {
+    display: block;
+    width: 100%;
+  }
+
+  /* mobile navigation */
+  .menu-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu-items {
+    background-image: linear-gradient(270deg, hsl(0, 0%, 98%) 66%, #00000011 33%);
+    height: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    transition: .5s;
+  }
+
+  .mobile-menu-links {
+    margin-left: 37.5%;
+    padding: 7rem 0;
+    text-align: left;
+    width: 60%;
+  }
+
+  .menu-icon-close {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  .mobile-link {
+    padding: .5rem 0;
+  }
+
+  .m-drop-btn .arrow-icon-down{
+    margin-left: 1rem;
+  }
+
+  .m-dropdown {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-dropdown-links {
+    padding: 1rem 0;
+  }
+
+  .m-dropdown-links a {
+    display: block;
+    margin-left: 1rem;
+    padding: .5rem 1rem;
+  }
+
+  .m-dropdown-links img {
+    margin-right: 1rem;
+  }
+
+  .m-login-reg .mobile-link {
+    margin: 2rem;
+    position: relative;
+    text-align: center;
+  }
+
+  .mobile-link .btn {
+    display: inline-block;
+  }
+
+  .show-nav {
+    height: 100%;
+  }
+
+  /* Footer */
+  .clients {
+    padding-top: 5rem;
+    position: static;
+  }
+}
